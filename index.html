@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jörg Gamerdinger – Perception Safety for Automated Driving</title>
-  <meta name="description" content="Jörg Gamerdinger – Research Associate at the University of Tübingen working on safety of environmental perception, collective perception, lane detection and data engineering for automated driving.">
+  <meta name="description" content="Jörg Gamerdinger – computer scientist, Data Science Manager at Creditplus Bank AG and PhD candidate at the University of Tübingen, with research on safe environmental perception, collective perception and data engineering for automated driving.">
   <meta name="author" content="Jörg Gamerdinger">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Jörg Gamerdinger">
@@ -22,10 +22,10 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Jörg Gamerdinger",
-    "jobTitle": "Research Associate",
+    "jobTitle": "Data Science Manager",
+    "worksFor": { "@type": "Organization", "name": "Creditplus Bank AG" },
     "affiliation": { "@type": "CollegeOrUniversity", "name": "University of Tübingen" },
     "image": "assets/portrait.jpg",
-    "email": "mailto:Joerg-Gamerdinger@web.de",
     "sameAs": [
       "https://www.linkedin.com/in/joerg-gamerdinger/",
       "https://scholar.google.com/citations?user=aenzy-wAAAAJ&hl=en",
@@ -121,6 +121,9 @@
     }
     .role { font-size: 19px; color: var(--muted); margin: 0 0 22px; }
     .role strong { color: var(--ink); font-weight: 600; }
+    .role .rl { display: block; }
+    .role .rl + .rl { margin-top: 4px; font-size: 17px; }
+    .nw { white-space: nowrap; }
     .lead { font-size: 17.5px; max-width: 60ch; margin: 0 0 30px; }
     .actions { display: flex; flex-wrap: wrap; gap: 10px; }
     .btn {
@@ -160,16 +163,17 @@
 
     /* ---------- Stats strip ---------- */
     .stats { background: var(--navy); color: var(--on-navy); }
-    .stats .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .stats .wrap { display: grid; grid-template-columns: repeat(3, 1fr); }
     .stat { padding: 30px 20px; border-left: 1px solid rgba(255,255,255,.1); }
     .stat:first-child { border-left: 0; padding-left: 0; }
     .stat .n { font-family: var(--serif); font-size: 40px; font-weight: 600; line-height: 1; color: #f0a46f; }
     .stat .l { font-size: 14px; color: #b9c3d4; margin-top: 8px; }
     @media (max-width: 760px) {
-      .stats .wrap { grid-template-columns: repeat(2, 1fr); }
-      .stat { padding: 22px 12px; }
-      .stat:nth-child(odd) { border-left: 0; padding-left: 0; }
-      .stat:nth-child(n+3) { border-top: 1px solid rgba(255,255,255,.1); }
+      .stats .wrap { grid-template-columns: repeat(3, 1fr); }
+      .stat { padding: 22px 10px; }
+      .stat:first-child { padding-left: 0; }
+      .stat .n { font-size: 30px; }
+      .stat .l { font-size: 12.5px; }
     }
 
     /* ---------- Sections ---------- */
@@ -363,8 +367,8 @@
         <li><a href="#research">Research</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#publications">Publications</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -377,15 +381,14 @@
   <section class="hero">
     <div class="wrap">
       <div class="reveal">
-        <span class="eyebrow">Automated Driving · Perception Safety</span>
+        <span class="eyebrow">Computer Scientist · Data Science · Automated Driving</span>
         <h1>Jörg Gamerdinger</h1>
-        <p class="role"><strong>Research Associate &amp; PhD Candidate</strong> at the Chair of Embedded Systems, University of Tübingen</p>
-        <p class="lead">I make the environmental perception of automated vehicles safer – through safety-oriented evaluation metrics, robust lane and object detection, collective perception, and scalable data pipelines that turn complex multimodal sensor data into high-quality data for machine learning.</p>
+        <p class="role"><span class="rl"><strong>Computer Scientist</strong> · <strong>Data Science Manager</strong> at <span class="nw">Creditplus Bank AG</span></span><span class="rl">PhD candidate, Chair of Embedded Systems, <span class="nw">University of Tübingen</span></span></p>
+        <p class="lead">I turn complex data into reliable, decision-ready insight. In my research, I made the environmental perception of automated vehicles safer – through safety-oriented evaluation metrics, robust lane and object detection, collective perception, and scalable pipelines that turn multimodal sensor data into high-quality data for machine learning.</p>
         <div class="actions">
           <a class="btn primary" href="https://www.linkedin.com/in/joerg-gamerdinger/" target="_blank" rel="noopener"><svg><use href="#i-linkedin"/></svg>LinkedIn</a>
           <a class="btn" href="https://scholar.google.com/citations?user=aenzy-wAAAAJ&amp;hl=en" target="_blank" rel="noopener"><svg><use href="#i-scholar"/></svg>Google Scholar</a>
           <a class="btn" href="https://www.embedded.uni-tuebingen.de/team/joerg-gamerdinger/" target="_blank" rel="noopener"><svg><use href="#i-uni"/></svg>University Profile</a>
-          <a class="btn" href="#contact"><svg><use href="#i-mail"/></svg>Contact</a>
         </div>
       </div>
       <div class="portrait reveal">
@@ -400,8 +403,7 @@
     <div class="wrap">
       <div class="stat"><div class="n">20</div><div class="l">Scientific publications</div></div>
       <div class="stat"><div class="n" id="statFirst">11</div><div class="l">First-author papers</div></div>
-      <div class="stat"><div class="n">2022</div><div class="l">Researcher in Tübingen since</div></div>
-      <div class="stat"><div class="n">1.15</div><div class="l">M.Sc. grade, with distinction</div></div>
+      <div class="stat"><div class="n">4+</div><div class="l">Years of research in automated driving</div></div>
     </div>
   </div>
 
@@ -410,17 +412,18 @@
     <div class="wrap">
       <div class="head reveal">
         <div><span class="eyebrow">About</span><h2>Profile</h2></div>
-        <p>Data engineering, machine learning and large-scale data processing for autonomous driving.</p>
+        <p>Computer scientist with a focus on data science, machine learning and large-scale data processing.</p>
       </div>
       <div class="body about-grid reveal">
         <div>
-          <p>I am a researcher at the University of Tübingen specializing in data engineering, machine learning, and large-scale data processing for autonomous driving. I design scalable data processing and evaluation pipelines and transform complex multimodal datasets into structured, high-quality data for machine learning applications – building reliable software in Python along the way.</p>
-          <p>My background spans autonomous driving data, computer vision and ML workflows, combined with experience in interdisciplinary research and industry projects. I am keen to contribute my expertise in data engineering, data governance and data quality to accelerate the next generation of autonomous driving.</p>
+          <p>I am a computer scientist working as Data Science Manager at Creditplus Bank AG. Before that, I spent more than four years as a researcher at the University of Tübingen, specializing in data engineering, machine learning, and large-scale data processing for autonomous driving. I designed scalable data processing and evaluation pipelines and transformed complex multimodal datasets into structured, high-quality data for machine learning applications – building reliable software in Python along the way.</p>
+          <p>My background spans autonomous driving data, computer vision and ML workflows, combined with experience in interdisciplinary research and industry projects. Today I bring this expertise in data engineering, data governance and data quality to data science in banking.</p>
         </div>
         <ul class="facts">
-          <li><span>Position</span><span>Research Associate</span></li>
-          <li><span>Group</span><span>Embedded Systems, Univ. of Tübingen</span></li>
-          <li><span>Doctorate</span><span>PhD candidate, Computer Science</span></li>
+          <li><span>Profession</span><span>Computer Scientist</span></li>
+          <li><span>Position</span><span>Data Science Manager</span></li>
+          <li><span>Company</span><span>Creditplus Bank AG</span></li>
+          <li><span>Doctorate</span><span>PhD candidate, Univ. of Tübingen</span></li>
           <li><span>Based in</span><span>Tübingen area, Germany</span></li>
           <li><span>Languages</span><span>German (native), English (professional)</span></li>
         </ul>
@@ -510,11 +513,25 @@
     <div class="wrap">
       <div class="head reveal">
         <div><span class="eyebrow">Career</span><h2>Experience</h2></div>
-        <p>From vehicle measurement at Mercedes-Benz to leading research on safe perception for automated driving.</p>
+        <p>From vehicle measurement at Mercedes-Benz and research on safe perception for automated driving to data science in banking.</p>
       </div>
       <ol class="body timeline">
         <li class="tl current reveal">
-          <div class="when">since 05/2022</div>
+          <div class="when">since 11/2026</div>
+          <h3>Data Science Manager – Project &amp; Operational Development</h3>
+          <div class="where">Creditplus Bank AG</div>
+          <ul>
+            <li>Development and implementation of scalable machine learning and AI models that make operational processes in sales more efficient, faster and more cost-effective</li>
+            <li>Exploratory data analysis, statistical evaluation, and development, documentation and validation of machine learning and deep learning models</li>
+            <li>Building and maintaining data pipelines (ETL/ELT) and supporting the deployment of production ML services via APIs and MLOps frameworks</li>
+            <li>Monitoring, retraining and continuous optimization of models in production</li>
+            <li>Analysis of business processes and identification, evaluation and prioritization of AI use cases, including feasibility and cost-benefit analyses</li>
+            <li>Technical lead of cross-functional optimization projects from idea to rollout, in close collaboration with IT, process management and business teams</li>
+            <li>Contributing to the data science &amp; AI strategy, the introduction of process mining and an internal competence center for AI-based process optimization</li>
+          </ul>
+        </li>
+        <li class="tl reveal">
+          <div class="when">05/2022 – 10/2026</div>
           <h3>Research Associate</h3>
           <div class="where">University of Tübingen · Chair of Embedded Systems</div>
           <ul>
@@ -528,16 +545,10 @@
           </ul>
         </li>
         <li class="tl reveal">
-          <div class="when">01/2022 – 04/2022</div>
-          <h3>Research Assistant</h3>
-          <div class="where">University of Tübingen · Chair of Embedded Systems</div>
-          <p>Software development for cooperative perception in autonomous driving.</p>
-        </li>
-        <li class="tl reveal">
-          <div class="when">09/2019 – 11/2021</div>
-          <h3>Teaching Assistant &amp; Exercise Instructor</h3>
+          <div class="when">09/2019 – 04/2022</div>
+          <h3>Research &amp; Teaching Assistant</h3>
           <div class="where">University of Tübingen</div>
-          <p>Organization and coordination of tutorials and practical courses, teaching complex technical concepts to students. Academic supervision of the course and coordination of the teaching assistant team.</p>
+          <p>Software development for cooperative perception in autonomous driving at the Chair of Embedded Systems. Organization and coordination of tutorials and practical courses, teaching complex technical concepts to students, academic supervision of a course and coordination of the teaching assistant team as exercise instructor.</p>
         </li>
         <li class="tl reveal">
           <div class="when">08/2016 – 03/2020</div>
@@ -571,15 +582,15 @@
         </li>
         <li class="tl reveal">
           <div class="when">03/2020 – 02/2022</div>
-          <h3>M.Sc. Computer Science <span class="badge">1.15 · with distinction</span></h3>
+          <h3>M.Sc. Computer Science <span class="badge">with distinction</span></h3>
           <div class="where">University of Tübingen · Minor: Business Administration</div>
-          <p>Thesis: <em>Spline-based Fusion Algorithm for Collective Lane Detection in Automated Driving</em> (grade 1.0)</p>
+          <p>Thesis: <em>Spline-based Fusion Algorithm for Collective Lane Detection in Automated Driving</em></p>
         </li>
         <li class="tl reveal">
           <div class="when">10/2016 – 03/2020</div>
-          <h3>B.Sc. Computer Science <span class="badge">1.9</span></h3>
+          <h3>B.Sc. Computer Science</h3>
           <div class="where">University of Tübingen · Minor: Business Administration</div>
-          <p>Thesis: <em>Development of a Safety Metric for the Evaluation of Local and Collective Perception in Automated Driving</em> (grade 1.3)</p>
+          <p>Thesis: <em>Development of a Safety Metric for the Evaluation of Local and Collective Perception in Automated Driving</em></p>
         </li>
         <li class="tl reveal">
           <div class="when">03/2015 – 09/2016</div>
@@ -595,28 +606,8 @@
     </div>
   </section>
 
-  <!-- Publications -->
-  <section class="block" id="publications">
-    <div class="wrap">
-      <div class="head reveal">
-        <div><span class="eyebrow">Publications</span><h2>First-author publications</h2></div>
-        <p>All <span id="pubCount">11</span> papers I have published as first author, in chronological order. Co-authored work is listed on Google Scholar.</p>
-      </div>
-      <div class="body">
-        <div class="sortbar reveal" role="group" aria-label="Sort publications">
-          <button class="sort-btn" type="button" data-order="new" aria-pressed="true">Newest first</button>
-          <button class="sort-btn" type="button" data-order="old" aria-pressed="false">Oldest first</button>
-        </div>
-        <ol class="pubs" id="pubList"></ol>
-        <div class="more reveal">
-          <a class="btn" href="https://scholar.google.com/citations?user=aenzy-wAAAAJ&amp;hl=en" target="_blank" rel="noopener"><svg><use href="#i-scholar"/></svg>All publications on Google Scholar<svg><use href="#i-arrow"/></svg></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Skills -->
-  <section class="block alt" id="skills">
+  <section class="block" id="skills">
     <div class="wrap">
       <div class="head reveal">
         <div><span class="eyebrow">Toolbox</span><h2>Skills</h2></div>
@@ -632,7 +623,7 @@
   </section>
 
   <!-- Selected Projects -->
-  <section class="block" id="projects">
+  <section class="block alt" id="projects">
     <div class="wrap">
       <div class="head reveal">
         <div><span class="eyebrow">Projects</span><h2>Selected projects</h2></div>
@@ -814,15 +805,34 @@
     </div>
   </section>
 
+  <!-- Publications -->
+  <section class="block" id="publications">
+    <div class="wrap">
+      <div class="head reveal">
+        <div><span class="eyebrow">Publications</span><h2>First-author publications</h2></div>
+        <p>All <span id="pubCount">11</span> papers I have published as first author, in chronological order. Co-authored work is listed on Google Scholar.</p>
+      </div>
+      <div class="body">
+        <div class="sortbar reveal" role="group" aria-label="Sort publications">
+          <button class="sort-btn" type="button" data-order="new" aria-pressed="true">Newest first</button>
+          <button class="sort-btn" type="button" data-order="old" aria-pressed="false">Oldest first</button>
+        </div>
+        <ol class="pubs" id="pubList"></ol>
+        <div class="more reveal">
+          <a class="btn" href="https://scholar.google.com/citations?user=aenzy-wAAAAJ&amp;hl=en" target="_blank" rel="noopener"><svg><use href="#i-scholar"/></svg>All publications on Google Scholar<svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact -->
   <section class="contact" id="contact">
     <div class="wrap reveal">
       <span class="eyebrow">Contact</span>
-      <h2>Let's talk about safe perception and data.</h2>
-      <p>I'm happy to connect about research collaborations, autonomous driving data, and roles in data engineering and data quality.</p>
+      <h2>Let's talk about data and machine learning.</h2>
+      <p>I'm happy to connect about data science, machine learning and research collaborations in automated driving.</p>
       <div class="actions">
-        <a class="btn primary" id="mailBtn" href="#contact"><svg><use href="#i-mail"/></svg><span>Send an email</span></a>
-        <a class="btn" href="https://www.linkedin.com/in/joerg-gamerdinger/" target="_blank" rel="noopener"><svg><use href="#i-linkedin"/></svg>LinkedIn</a>
+        <a class="btn primary" href="https://www.linkedin.com/in/joerg-gamerdinger/" target="_blank" rel="noopener"><svg><use href="#i-linkedin"/></svg>LinkedIn</a>
         <a class="btn" href="https://scholar.google.com/citations?user=aenzy-wAAAAJ&amp;hl=en" target="_blank" rel="noopener"><svg><use href="#i-scholar"/></svg>Google Scholar</a>
         <a class="btn" href="https://www.embedded.uni-tuebingen.de/team/joerg-gamerdinger/" target="_blank" rel="noopener"><svg><use href="#i-uni"/></svg>University Profile</a>
       </div>
@@ -926,12 +936,6 @@
       setTimeout(() => { fig.classList.toggle('contain', b.dataset.fit === 'contain'); main.src = b.dataset.src; main.alt = b.dataset.cap; cap.textContent = b.dataset.cap; main.style.opacity = 1; }, 180);
     }));
   });
-
-  // ----- Email (assembled at runtime to reduce spam harvesting) -----
-  const user = 'Joerg-Gamerdinger', domain = 'web.de';
-  const mailBtn = document.getElementById('mailBtn');
-  mailBtn.href = 'mailto:' + user + '@' + domain;
-  mailBtn.querySelector('span').textContent = user + '@' + domain;
 
   // ----- Theme toggle -----
   const root = document.documentElement, btn = document.getElementById('themeBtn');
